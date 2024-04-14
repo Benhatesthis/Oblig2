@@ -64,13 +64,13 @@ function kjop() {
     } else {
         $("feilmldfelt").html("<h2>Feil vedrørende din ordre ved </h2><strong>" + feilmld);
     }
-};
+}
 
 function slett() {
     $.get("/slettLagring", function (){
         hent();
     })
-};
+}
 
 function hent() {
     $.get("/tilKlient", function (data){
